@@ -17,6 +17,14 @@
 
   window.USUARIO_ACTUAL = session;
 
+  var remaining = session.exp - Date.now();
+  if (remaining > 0) {
+    setTimeout(function () {
+      try { sessionStorage.removeItem(KEY); } catch (error) {}
+      window.location.replace("login.html");
+    }, remaining);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var name = document.getElementById("userName");
     var initial = document.getElementById("userInitial");
