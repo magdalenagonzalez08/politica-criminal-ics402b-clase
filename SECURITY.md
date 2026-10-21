@@ -26,6 +26,7 @@ GitHub Pages es un servicio de archivos estáticos. Por eso:
 - El control de acceso se ejecuta en el navegador y puede ser evadido por una persona con conocimientos técnicos.
 - Los archivos del sitio son públicos aunque la pantalla de acceso bloquee la interfaz.
 - El bloqueo por intentos se guarda en el navegador y no puede impedir un ataque externo.
+- Las claves son cortas para facilitar el acceso. Eso reduce la resistencia frente a alguien que obtenga los hashes y trate de adivinarlas.
 - Este sitio no debe usarse para datos personales, pagos, calificaciones oficiales ni información confidencial.
 
 Para autenticación real se necesita un servicio con servidor, por ejemplo Supabase Auth, Cloudflare Access o un repositorio privado con GitHub Pages de pago.
