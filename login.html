@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es" data-theme="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <title>Acceso · Política Criminal ICS-402B</title>
+  <meta name="description" content="Acceso privado para el grupo de Política Criminal (ICS-402B, UNACHI).">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-body">
+  <a class="skip-link" href="#loginForm">Saltar al formulario</a>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="login-shell">
+    <section class="login-card card" aria-labelledby="loginTitle">
+      <div class="login-brand">
+        <div class="brand-mark" aria-hidden="true">PC</div>
+        <div>
+          <strong>Política Criminal</strong>
+          <span>ICS-402B · UNACHI</span>
+        </div>
+      </div>
+
+      <span class="eyebrow">Acceso para el grupo</span>
+      <h1 id="loginTitle">Entrar al repaso</h1>
+      <p class="login-lead">Usa el usuario y la clave que te entregaron. No tienes que crear ninguna cuenta.</p>
+
+      <form id="loginForm" novalidate>
+        <label class="login-field" for="usuario">
+          <span>Usuario</span>
+          <input id="usuario" name="usuario" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="alumno01" required>
+        </label>
+        <label class="login-field" for="clave">
+          <span>Clave</span>
+          <input id="clave" name="clave" type="password" autocomplete="current-password" autocapitalize="none" spellcheck="false" placeholder="Tu clave de acceso" required>
+        </label>
+
+        <p class="login-error" id="loginError" role="alert" aria-live="polite" hidden></p>
+
+        <button class="btn primary block" id="loginBtn" type="submit">Entrar</button>
+      </form>
+
+      <div class="login-help">
+        <a href="seguridad.html">Política de acceso</a>
+        <span aria-hidden="true">·</span>
+        <span>No compartas tu clave</span>
+      </div>
+    </section>
+
+    <p class="login-foot">Si no tienes acceso, pídeselo a la persona que administra el grupo.</p>
+  </main>
+
+  <script src="usuarios.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

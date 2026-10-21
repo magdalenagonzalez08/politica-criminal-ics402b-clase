@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es" data-theme="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <title>Política de acceso · Política Criminal ICS-402B</title>
+  <meta name="description" content="Política de acceso y seguridad del repaso para el grupo de Política Criminal (ICS-402B).">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="login-body">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="login-shell policy-shell" id="contenido">
+    <section class="login-card card policy-card">
+      <div class="login-brand">
+        <div class="brand-mark" aria-hidden="true">PC</div>
+        <div>
+          <strong>Política Criminal</strong>
+          <span>ICS-402B · UNACHI</span>
+        </div>
+      </div>
+
+      <span class="eyebrow">Acceso del grupo</span>
+      <h1>Política de acceso y seguridad</h1>
+      <p class="login-lead">Esta página explica cómo funciona el acceso y qué límites tiene. Está pensada para un grupo de estudio, no para datos sensibles.</p>
+
+      <div class="policy-list">
+        <section>
+          <h2>Qué protege</h2>
+          <p>El acceso pide un usuario y una clave para que el enlace no quede abierto a cualquier persona que lo reciba. Es un filtro básico para el grupo.</p>
+        </section>
+
+        <section>
+          <h2>Cómo se guardan las claves</h2>
+          <p>No se guardan claves en texto plano dentro del sitio. Cada usuario tiene una sal distinta y su clave se verifica con PBKDF2-SHA-256 y 210.000 iteraciones.</p>
+        </section>
+
+        <section>
+          <h2>Sesión</h2>
+          <p>La sesión dura 8 horas y se guarda en la pestaña actual. Al cerrar el navegador se pierde. El botón <strong>Salir</strong> del menú lateral cierra la sesión de inmediato.</p>
+        </section>
+
+        <section>
+          <h2>Intentos</h2>
+          <p>Después de 5 intentos fallidos, el usuario se bloquea durante 5 minutos. Esto frena pruebas automáticas simples, aunque no sustituye un servidor de autenticación.</p>
+        </section>
+
+        <section>
+          <h2>Qué no debes compartir</h2>
+          <p>No compartas tu usuario, tu clave ni capturas con la sesión abierta. Si compartes el enlace, la otra persona verá la pantalla de acceso, pero no entrará sin una clave válida.</p>
+        </section>
+
+        <section>
+          <h2>Límite importante</h2>
+          <p>GitHub Pages es un sitio estático. Aunque el acceso funciona como filtro, una persona con conocimientos técnicos podría inspeccionar los archivos públicos del sitio. No lo uses para información confidencial ni para cobros. Para autenticación real hace falta un servicio con servidor, como Supabase.</p>
+        </section>
+
+        <section>
+          <h2>Datos y privacidad</h2>
+          <p>El sitio no pide correo, teléfono ni datos personales. El avance de estudio se guarda solo en el navegador de cada persona con <code>localStorage</code>. No hay analítica ni rastreadores.</p>
+        </section>
+
+        <section>
+          <h2>Si una clave se filtra</h2>
+          <p>Hay que generar una clave nueva y actualizar el archivo de usuarios. Mientras tanto, esa clave debe dejar de usarse.</p>
+        </section>
+      </div>
+
+      <div class="policy-actions">
+        <a class="btn primary" href="login.html">Volver al acceso</a>
+        <a class="btn ghost" href="index.html">Ir al repaso</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

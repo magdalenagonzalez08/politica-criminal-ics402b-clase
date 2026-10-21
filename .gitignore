@@ -1,0 +1,17 @@
+# Material de clase: no se publica en el repositorio
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+
+# Archivos del sistema
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temporales
+*.tmp
+*.log
+
+# Credenciales de acceso: solo local, nunca al repositorio
+usuarios-clase.txt
